@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="indextest.js"></script>
+<link rel="stylesheet" href="testindex.css">
+<style>
+    
+</style>
+<body>
+    <nav>
+        <div class="navitem">
+            Logo
+        </div>
+        <div class="navitem">
+            <div class="list-item">
+                <li>Home</li>
+                <li>About</li>
+                <li>Career</li>
+                <li>Conatct</li>
+            </div>
+           
+        </div>
+        <div class="navitem">
+            <div class="login">
+                <button>Sign in</button>
+                <button>Sign up</button>
+            </div>
+            
+        </div>
+        <!-- <p>Ecommerce</p>
+        <li>Home</li>
+        <li>About</li>
+        <li>Career</li>
+        <li>Conatct</li> -->
+
+
+    </nav>
+    
+        <div class="sidebar">
+            <div class="sidebar-list">
+                <li>Dashboard</li>
+                <li onclick="showUsers()">Users</li>
+                <li onclick="showProducts()">Products</li>
+                <li>Category</li>
+            </div>
+         
+            <div class="logout-btn">
+                <button>Logout</button>
+                
+            </div>
+
+        </div>
+        <div class="category" id="category">
+            <div class="category-btn" id="category-btn"></div>
+            <div class="sorted">
+                <lable>SortBy:</lable>
+                <select name="" id="sort" onchange="sortProducts()">
+                    <option value="Defualt">Defualt</option><br>
+                    <option value="highTolow">PriceHighToLow</option><br>
+                    <option value="LowToHigh">LowToHigh</option>
+                    <option value="AToZ">A-Z</option>
+                    <option value="ZToA">Z-A</option>
+                    <!-- <option value="0-9">0-9</option> -->
+                </select>
+            </div>
+        </div>
+        
+        <div id="container" class="conatainer"></div>
+        <div class="users-conatiner" >
+            <div class="users-table">
+                <h2>Many Users</h2>
+                <table>
+                    <tr>
+                        <th>Sr</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>ph.no</th>
+                        <th>city</th>
+                        <th>Action</th>
+
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>shubham</td>
+                        <td>abc@gmail.com</td>
+                        <td>7666877591</td>
+                        <td>pune</td>
+                        <td rowspan="2"><button>showDetails</button></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>sh</td>
+                        <td>abc@gmail.com</td>
+                        <td>7666877591</td>
+                        <td>pune</td>
+                        <!-- <td rowspan="showDetails">showDetails</td> -->
+                    </tr>
+
+                </table>
+            </div>
+
+        </div>
+
+
+        <div id="modal" class="modal-container">
+            <div class="modal-content">
+                <button class="close-btn" onclick="closeModal()">Close</button>
+                <img id="modal-image" src="" alt="Product">
+                <h3 id="modal-title"></h3>
+                <p id="modal-price"></p>
+                <p id="modal-category"></p>
+            </div>
+        </div>
+    
+</body>
+</html>
